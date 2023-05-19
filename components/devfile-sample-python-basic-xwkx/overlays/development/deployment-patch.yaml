@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-xwkx
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/jhutar-tenant/my-app/devfile-sample-python-basic-xwkx@sha256:bf5f3df34f1fee21dbbd125f6e74f5747d7cf64bd69301ba500862f53a8b581e
+        name: my-python
+        resources: {}
+status: {}
